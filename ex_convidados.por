@@ -21,6 +21,12 @@ programa
 			se (opcao == 0) {
 				pare
 				}
+			se (opcao > 4) {
+				escreva("Opção inválida.")
+				}
+			se (opcao < 0) {
+				escreva("Opção Inválida.")
+				}
 			}
 	}
 	funcao menu() { // Função que puxa o menu e gera o input opção 
@@ -79,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1736; 
+ * @POSICAO-CURSOR = 357; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

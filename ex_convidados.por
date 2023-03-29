@@ -71,7 +71,7 @@ programa
 			}
 		}
 	funcao pagamento() { // Função que gera um total a se pagar por todos os convidados presentes na lista
-		contador = 0
+		inteiro contador = 0
 		para(inteiro i=0; i < 50; i++) {
 			se (convidados[i] != "") {
 				contador = contador + 1
@@ -85,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 60; 
+ * @POSICAO-CURSOR = 1656; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

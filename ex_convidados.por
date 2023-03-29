@@ -33,10 +33,16 @@ programa
         leia(opcao)
 		}
 	funcao inserir_nome() { // Função que insere um nome no Vetor
+		cadeia c 
 		escreva("\n", "Digite o nome:")
 		para(inteiro i=0; i < 50; i++) {
 			se (convidados[i] == "") {
 				leia(convidados[i])
+			
+				}
+			escreva("Deseja continuar? s/n")
+			leia(c)
+			se (c == "n") {
 				pare
 				}
 			}
@@ -73,7 +79,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1317; 
+ * @POSICAO-CURSOR = 1736; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

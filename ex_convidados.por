@@ -1,7 +1,7 @@
 programa
 {
 	cadeia convidados[50], nome
-	inteiro opcao = 100, contador = 0
+	inteiro opcao = 100
 	funcao inicio()
 	{ // Código principal
 		enquanto (opcao != 0) {
@@ -20,6 +20,12 @@ programa
 				}
 			se (opcao == 0) {
 				pare
+				}
+			se (opcao > 4) {
+				escreva("Opção inválida.")
+				}
+			se (opcao < 0) {
+				escreva("Opção Inválida.")
 				}
 			}
 	}
@@ -65,13 +71,13 @@ programa
 			}
 		}
 	funcao pagamento() { // Função que gera um total a se pagar por todos os convidados presentes na lista
+		contador = 0
 		para(inteiro i=0; i < 50; i++) {
 			se (convidados[i] != "") {
 				contador = contador + 1
 				}
 			}
 		escreva("\n\n", "O total a pagar por convidados é: ", contador * 120, "\n")
-		contador = 0
 		}
 }
 /* $$$ Portugol Studio $$$ 
@@ -79,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1736; 
+ * @POSICAO-CURSOR = 60; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
